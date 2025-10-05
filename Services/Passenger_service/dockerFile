@@ -1,0 +1,5 @@
+FROM ballerina/ballerina:latest
+WORKDIR /app
+COPY . .
+RUN bal build
+CMD ["bal", "run"]
